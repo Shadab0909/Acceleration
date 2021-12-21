@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" verbose="5">
+	<listeners>
+		<listener class-name="utilities.TestListener" />
+		<listener class-name="utilities.AnnotationTransformer" />
+		<listener class-name="utilities.ExtentReporterNG" />
+	</listeners>
+	<test name="Test-Login" preserve-order="true" enabled="true">
+		<classes>
+			<class name="com.vtiger.testscripts.TestLoginPage" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Test-Lead" preserve-order="true" enabled="true">
+		<classes>
+			<class name="com.vtiger.testscripts.TestLeadsPage" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Test-Organization" preserve-order="true"
+		enabled="true">
+		<classes>
+			<class name="com.vtiger.testscripts.TestOrganizationPage" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

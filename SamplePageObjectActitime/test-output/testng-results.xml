@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="66803" started-at="2021-12-21T19:39:43Z" finished-at="2021-12-21T19:40:49Z">
+    <groups>
+    </groups>
+    <test name="Test-Login" duration-ms="14865" started-at="2021-12-21T19:39:43Z" finished-at="2021-12-21T19:39:58Z">
+      <class name="com.vtiger.testscripts.TestLoginPage">
+        <test-method status="PASS" signature="testVtigerLogin()[pri:0, instance:com.vtiger.testscripts.TestLoginPage@1f0f1111]" name="testVtigerLogin" duration-ms="14848" started-at="2021-12-22T01:09:43Z" finished-at="2021-12-22T01:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testVtigerLogin -->
+      </class> <!-- com.vtiger.testscripts.TestLoginPage -->
+    </test> <!-- Test-Login -->
+    <test name="Test-Lead" duration-ms="24688" started-at="2021-12-21T19:39:58Z" finished-at="2021-12-21T19:40:23Z">
+      <class name="com.vtiger.testscripts.TestLeadsPage">
+        <test-method status="PASS" signature="prerequisite()[pri:0, instance:com.vtiger.testscripts.TestLeadsPage@2f7c2f4f]" name="prerequisite" is-config="true" duration-ms="15664" started-at="2021-12-22T01:09:58Z" finished-at="2021-12-22T01:10:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisite -->
+        <test-method status="PASS" signature="testLeadCreation()[pri:0, instance:com.vtiger.testscripts.TestLeadsPage@2f7c2f4f]" name="testLeadCreation" duration-ms="5153" started-at="2021-12-22T01:10:14Z" finished-at="2021-12-22T01:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLeadCreation -->
+        <test-method status="PASS" signature="testEditCreatedLead()[pri:0, instance:com.vtiger.testscripts.TestLeadsPage@2f7c2f4f]" name="testEditCreatedLead" duration-ms="2910" started-at="2021-12-22T01:10:19Z" depends-on-methods="com.vtiger.testscripts.TestLeadsPage.testLeadCreation" finished-at="2021-12-22T01:10:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditCreatedLead -->
+        <test-method status="PASS" signature="testDeleteCreatedLead()[pri:0, instance:com.vtiger.testscripts.TestLeadsPage@2f7c2f4f]" name="testDeleteCreatedLead" duration-ms="878" started-at="2021-12-22T01:10:22Z" depends-on-methods="com.vtiger.testscripts.TestLeadsPage.testEditCreatedLead" finished-at="2021-12-22T01:10:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteCreatedLead -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.vtiger.testscripts.TestLeadsPage@2f7c2f4f]" name="closeBrowser" is-config="true" duration-ms="76" started-at="2021-12-22T01:10:23Z" finished-at="2021-12-22T01:10:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.vtiger.testscripts.TestLeadsPage -->
+    </test> <!-- Test-Lead -->
+    <test name="Test-Organization" duration-ms="26795" started-at="2021-12-21T19:40:23Z" finished-at="2021-12-21T19:40:49Z">
+      <class name="com.vtiger.testscripts.TestOrganizationPage">
+        <test-method status="PASS" signature="prerequisite()[pri:0, instance:com.vtiger.testscripts.TestOrganizationPage@7ce3cb8e]" name="prerequisite" is-config="true" duration-ms="17147" started-at="2021-12-22T01:10:23Z" finished-at="2021-12-22T01:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisite -->
+        <test-method status="PASS" signature="testOrganizationCreation()[pri:3, instance:com.vtiger.testscripts.TestOrganizationPage@7ce3cb8e]" name="testOrganizationCreation" duration-ms="4972" started-at="2021-12-22T01:10:40Z" finished-at="2021-12-22T01:10:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrganizationCreation -->
+        <test-method status="PASS" signature="testOrganizationEdit()[pri:3, instance:com.vtiger.testscripts.TestOrganizationPage@7ce3cb8e]" name="testOrganizationEdit" duration-ms="3699" started-at="2021-12-22T01:10:45Z" depends-on-methods="com.vtiger.testscripts.TestOrganizationPage.testOrganizationCreation" finished-at="2021-12-22T01:10:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrganizationEdit -->
+        <test-method status="PASS" signature="testOrganizationDelete()[pri:3, instance:com.vtiger.testscripts.TestOrganizationPage@7ce3cb8e]" name="testOrganizationDelete" duration-ms="885" started-at="2021-12-22T01:10:49Z" depends-on-methods="com.vtiger.testscripts.TestOrganizationPage.testOrganizationEdit" finished-at="2021-12-22T01:10:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOrganizationDelete -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.vtiger.testscripts.TestOrganizationPage@7ce3cb8e]" name="closeBrowser" is-config="true" duration-ms="73" started-at="2021-12-22T01:10:49Z" finished-at="2021-12-22T01:10:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.vtiger.testscripts.TestOrganizationPage -->
+    </test> <!-- Test-Organization -->
+  </suite> <!-- Suite -->
+</testng-results>
